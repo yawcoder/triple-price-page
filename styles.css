@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito&family=Signika+Negative:wght@500&family=Ubuntu:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+/*Toggle div flexing*/
+.toggle-div{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin: auto;
+}
+
+#check{
+    display: none;
+}
+
+.checked{
+    display: none;
+}
+
+#check:checked ~ .checked{
+    display: inline-block;
+}
+
+#check:checked ~ .unchecked{
+    display: none;
+}
+
+.price-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    height: 450px;
+   /* box-shadow: -5px 5px 5px 3px rgba(0,0,0,0.4);*/
+}
+.basic-card{
+    border-radius: 5px;
+    box-shadow: -5px 5px 5px 3px rgba(0,0,0,0.4);
+    height: 90%;
+    flex-grow: 1;
+    text-align: center;
+    padding: 30px 20px;
+}
+.pro-card{
+    background-color: rgb(90, 85, 234);
+    border-radius: 5px;
+    height: 100%;
+    flex-grow: 1;
+    text-align: center;
+    padding: 30px 20px;
+    color: #fff;
+}
+.master-card{
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.4);
+    height: 90%;
+    flex-grow: 1;
+    text-align: center;
+    padding: 30px 20px;
+}
+.card-name{
+    font-weight: bold;
+}
+.card-price{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.card-des{
+    border-top: solid 1px rgba(0,0,0,0.2);
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 50px;
+}
+.des-border-bottom{
+    border-bottom: solid 1px rgba(0,0,0,0.2);
+}
+.pro-card-border{
+    border-top: rgba(255, 255, 255, 0.4) solid 1px !important;
+}
+.pro-border-bottom{
+    border-bottom: rgba(255, 255, 255, 0.4) solid 1px;
+}
+.button{
+    margin: 40px 0px;
+    padding: 7px 60px;
+    background-color: rgb(90, 85, 234);
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+.button-pro{
+    margin: 63px 0px;
+    padding: 7px 60px;
+    background-color: #fff;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
