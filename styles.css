@@ -12,37 +12,13 @@ a{
     text-decoration: none;
 }
 
-/*Toggle div flexing*/
-.toggle-div{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-    margin: auto;
-}
-
-#check{
-    display: none;
-}
-
-.checked{
-    display: none;
-}
-
-#check:checked ~ .checked{
-    display: inline-block;
-}
-
-#check:checked ~ .unchecked{
-    display: none;
-}
-
 .price-div{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 70%;
     margin: auto;
-    height: 450px;
+    height: 500px;
    /* box-shadow: -5px 5px 5px 3px rgba(0,0,0,0.4);*/
 }
 .basic-card{
@@ -110,4 +86,27 @@ a{
     border: none;
     border-radius: 5px;
     font-weight: bold;
+}
+
+@media(max-width: 952px){
+    .price-div{
+        width: 90%;
+    }
+}
+
+@media(max-width: 750px){
+    .price-div{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+    .basic-card, .pro-card, .master-card{
+        display: block;
+        margin-top: 25px;
+        width: 100%;
+    }
+    .pro-card{
+        box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.4);
+    }
 }
