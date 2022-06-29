@@ -12,6 +12,43 @@ a{
     text-decoration: none;
 }
 
+.toggle{
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+.anually-toggle{
+    font-size: 2rem;
+}
+.monthly-toggle{
+    font-size: 2rem;
+    display: none;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .anually-toggle{
+    display: none;
+}
+#check:checked ~ .monthly-toggle{
+    display: block;
+}
+
+
+.annually{
+    display: none;
+}
+
+.monthly{
+    display: none;
+}
+
+
+
+
 .price-div{
     display: flex;
     justify-content: space-around;
